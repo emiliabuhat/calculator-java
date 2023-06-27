@@ -1,0 +1,7 @@
+Pentru a testa programul Calculator prin metoda black box in primul rand programul ar trebui sa returneze un mesaj pentru a introduce 
+expresia aritmetica dorita pentru a identifica daca programul efectueaza calculele corect, iar in cazul nostru codul programului nu poate 
+fi rulat.
+Pentru a efectua un test unitar asupra metodei de calcul „Calculate” am creat o clasa noua si am definit variabilele numar1, numar2 si 
+operatie. La apelarea functiei  din programul Calculator am identificat faptul ca functia nu este publica, astfel ca nu poate fi accesata 
+decat in cadrul clasei Calculator. A doua problema identificata este faptul ca functia Calculate este void, ceea ce inseamna ca nu 
+returneaza nimic.  
