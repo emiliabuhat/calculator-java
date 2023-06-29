@@ -1,7 +1,25 @@
-Pentru a testa programul Calculator prin metoda black box in primul rand programul ar trebui sa returneze un mesaj pentru a introduce 
-expresia aritmetica dorita pentru a identifica daca programul efectueaza calculele corect, iar in cazul nostru codul programului nu poate 
-fi rulat.
-Pentru a efectua un test unitar asupra metodei de calcul „Calculate” am creat o clasa noua si am definit variabilele numar1, numar2 si 
-operatie. La apelarea functiei  din programul Calculator am identificat faptul ca functia nu este publica, astfel ca nu poate fi accesata 
-decat in cadrul clasei Calculator. A doua problema identificata este faptul ca functia Calculate este void, ceea ce inseamna ca nu 
-returneaza nimic.  
+Pentru a programul prin metoda black box este necesar sa nu cunosti codul sursa, si anume testarea se face din prisma utilizatorului. 
+Asadar un utilizator pentru a verifica corectitudinea rezultatelor este necesar sa ruleze programul.  Am copiat codul in programul 
+IntelliJ IDEA si am identificat ca prima problema este ca programul nu poate fi rulat. 
+ 
+	Am creat urmatorul test unitar prin Junit inaintea metodei Calculate:
+@Test
+public void Test(){
+    System.out.println("Testare metoda Calculate");
+}
+	Dupa rularea testului  rezultatul afisat a fost :Process finished with exit code 0.
+	Omisiuni:
+-	Programul nu returneaza un mesaj pentru a introduce expresia aritmetica
+
+Defecte:
+-	Programul nu poate fi rulat;
+-	Metoda Calculate este void astfel ca nu returneaza nimic;
+-	Metoda Calculate este private astfel ca nu poate fi accesata decat in cadrul acelei clase.
+Observatii:
+-	Metoda Run nu este folosita;
+-	In repozitoriu ar trebui adaugata si clasa Main in care clasa Calculator ar trebui utilizata si in care ar trebui pusa metoda de 
+adaugare expresie aritmetica.
+
+
+
+
